@@ -1,0 +1,21 @@
+# Google-Stats-Helper
+- [ ] Google Map Data
+- [ ] Google Searh History Editor
+- [ ] Google Youtube Comments
+- [ ] Youtube Subscriptions
+= [ ] Youtube Seach History
+- [ ] Favourite Pages
+- [ ] Favourite Images
+- [ ] Reminders
+- [ ] Profile Info
+- [ ] Google Map ratings
+- [ ] Google Map Labelled Places
+- [ ] Google Fit Data (Daily Aggregations)
+- [ ] Google Fit Data (Activities)
+- [ ] Google Contacts
+- [ ] Chrome Autofill
+- [ ] Chrome Bookmarks
+- [ ] Chrome BrowserHistroy
+- [ ] Chrome Reading List
+--------------------------------
+- [ ] Add things as they come to my mind
