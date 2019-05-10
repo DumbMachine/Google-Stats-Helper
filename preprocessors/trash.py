@@ -1,5 +1,4 @@
 from something import Takeout
 
 some = Takeout()
-some.find_takeout()
-some.extractor()
+some.search_history()

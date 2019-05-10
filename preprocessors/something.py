@@ -1,8 +1,11 @@
+import json
 import argparse
 import re
 import sys
 import zipfile as zf
 import os
+# from bs4 import BeautifulSoup
+from lxml import html
 
 
 class Takeout:
@@ -27,6 +30,13 @@ class Takeout:
         self.zip_files = []
         self.strategy = strategy
 
+        self._xpath_search_gap_title = '/html/body/div/div[{}]/div/div[2]'
+        self._xpath_search_gap_product = '/html/body/div/div[{}]/div/div[4]'
+        # self._xpath_search_gap = None
+        # self._xpath_search_gap = None
+        # self._xpath_search_gap = None
+        # self._xpath_search_gap = None
+
     def find_takeout(self):
         '''
         Function to find the takeout files.
@@ -47,7 +57,6 @@ class Takeout:
         else:
             raise Exception("Path is not a string.")
 
-    # TODO: Doens't work properly.
     def extractor(self):
         '''
         Function to extract the extractor files.
@@ -84,3 +93,36 @@ class Takeout:
             None
         '''
         raise NotImplementedError
+
+    def search_history(self):
+        '''
+        Function to preprocess history data
+
+        @params:
+            None
+
+        @returns:
+            .json
+            with all the required info for the futher things
+        '''
+        # SEARHC in GOOGLE APPS:
+        something = {'one': []}
+        with open(os.path.join(self.path_extract, r'Takeout\My Activity\Google Apps\My Activity.html'), 'rb') as file:
+            html_file = html.parse(file)
+            i = 0
+            while i < 100:
+                try:
+                    for content, content1 in zip(html_file.xpath(self._xpath_search_gap_title.format(i)), html_file.xpath(self._xpath_search_gap_product.format(i))):
+                        title = content.text_content().encode('ascii', 'ignore')[12:]
+                        hmm = content1.text_content().encode('ascii', 'ignore')
+                        print(f"Title: {title}")
+                        print(f"{hmm}")
+                        something["one"].append({
+                            'Search': str(title),
+                            'App': str(hmm),
+                        })
+                    i += 1
+                except:
+                    break
+        with open('data.json', 'w') as outfile:
+            json.dump(something, outfile)
