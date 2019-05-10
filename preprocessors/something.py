@@ -124,5 +124,5 @@ class Takeout:
                     i += 1
                 except:
                     break
-        with open('data.json', 'w') as outfile:
+        with open('./something/data.json', 'w') as outfile:
             json.dump(something, outfile)
