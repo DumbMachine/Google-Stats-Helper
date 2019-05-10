@@ -124,5 +124,270 @@ class Takeout:
                     i += 1
                 except:
                     break
-        with open('./something/data.json', 'w') as outfile:
+        with open('./something/apps.json', 'w') as outfile:
+            json.dump(something, outfile)
+
+    def search_gmail(self):
+        '''
+        Function to preprocess history data
+
+        @params:
+            None
+
+        @returns:
+            .json
+            with all the required info for the futher things
+        '''
+        # SEARHC in GOOGLE APPS:
+        something = {'one': []}
+        with open(os.path.join(self.path_extract, r'Takeout\My Activity\Gmail\My Activity.html'), 'rb') as file:
+            html_file = html.parse(file)
+            i = 0
+            while i < 100:
+                try:
+                    for content, content1 in zip(html_file.xpath(self._xpath_search_gap_title.format(i)), html_file.xpath(self._xpath_search_gap_product.format(i))):
+                        title = content.text_content().encode('ascii', 'ignore')[12:]
+                        hmm = content1.text_content().encode('ascii', 'ignore')
+                        print(f"Title: {title}")
+                        print(f"{hmm}")
+                        something["one"].append({
+                            'Search': str(title),
+                            'App': str(hmm),
+                        })
+                    i += 1
+                except:
+                    break
+        with open('./something/gmail.json', 'w') as outfile:
+            json.dump(something, outfile)
+
+    def search_developer(self):
+        '''
+        Function to preprocess history data
+
+        @params:
+            None
+
+        @returns:
+            .json
+            with all the required info for the futher things
+        '''
+        # SEARHC in GOOGLE APPS:
+        something = {'one': []}
+        with open(os.path.join(self.path_extract, r'Takeout\My Activity\Developers\My Activity.html'), 'rb') as file:
+            html_file = html.parse(file)
+            i = 0
+            while i < 100:
+                try:
+                    for content, content1 in zip(html_file.xpath(self._xpath_search_gap_title.format(i)), html_file.xpath(self._xpath_search_gap_product.format(i))):
+                        title = content.text_content().encode('ascii', 'ignore')[12:]
+                        hmm = content1.text_content().encode('ascii', 'ignore')
+                        print(f"Title: {title}")
+                        print(f"{hmm}")
+                        something["one"].append({
+                            'Search': str(title),
+                            'App': str(hmm),
+                        })
+                    i += 1
+                except:
+                    break
+        with open('./something/Developers.json', 'w') as outfile:
+            json.dump(something, outfile)
+
+    def search_books(self):
+        '''
+        Function to preprocess history data
+
+        @params:
+            None
+
+        @returns:
+            .json
+            with all the required info for the futher things
+        '''
+        # SEARHC in GOOGLE APPS:
+        something = {'one': []}
+        with open(os.path.join(self.path_extract, r'Takeout\My Activity\Books\My Activity.html'), 'rb') as file:
+            html_file = html.parse(file)
+            i = 0
+            while i < 100:
+                try:
+                    for content, content1 in zip(html_file.xpath(self._xpath_search_gap_title.format(i)), html_file.xpath(self._xpath_search_gap_product.format(i))):
+                        title = content.text_content().encode('ascii', 'ignore')[12:]
+                        hmm = content1.text_content().encode('ascii', 'ignore')
+                        print(f"Title: {title}")
+                        print(f"{hmm}")
+                        something["one"].append({
+                            'Search': str(title),
+                            'App': str(hmm),
+                        })
+                    i += 1
+                except:
+                    break
+        with open('./something/Books.json', 'w') as outfile:
+            json.dump(something, outfile)
+
+    def play_games(self):
+        '''
+        Function to preprocess history data
+
+        @params:
+            None
+
+        @returns:
+            .json
+            with all the required info for the futher things
+        '''
+        # SEARHC in GOOGLE APPS:
+        something = {'one': []}
+        with open(os.path.join(self.path_extract, r'Takeout\My Activity\Google Play Games\My Activity.html'), 'rb') as file:
+            html_file = html.parse(file)
+            i = 0
+            while i < 100:
+                try:
+                    for content, content1 in zip(html_file.xpath(self._xpath_search_gap_title.format(i)), html_file.xpath(self._xpath_search_gap_product.format(i))):
+                        title = content.text_content().encode('ascii', 'ignore')[12:]
+                        hmm = content1.text_content().encode('ascii', 'ignore')
+                        print(f"Title: {title}")
+                        print(f"{hmm}")
+                        something["one"].append({
+                            'Search': str(title),
+                            'App': str(hmm),
+                        })
+                    i += 1
+                except:
+                    break
+        with open('./something/games.json', 'w') as outfile:
+            json.dump(something, outfile)
+
+    def play_video_search(self):
+        '''
+        Function to preprocess history data
+
+        @params:
+            None
+
+        @returns:
+            .json
+            with all the required info for the futher things
+        '''
+        # SEARHC in GOOGLE APPS:
+        something = {'one': []}
+        with open(os.path.join(self.path_extract, r'Takeout\My Activity\Video Search\My Activity.html'), 'rb') as file:
+            html_file = html.parse(file)
+            i = 0
+            while i < 100:
+                try:
+                    for content, content1 in zip(html_file.xpath(self._xpath_search_gap_title.format(i)), html_file.xpath(self._xpath_search_gap_product.format(i))):
+                        title = content.text_content().encode('ascii', 'ignore')[12:]
+                        hmm = content1.text_content().encode('ascii', 'ignore')
+                        print(f"Title: {title}")
+                        print(f"{hmm}")
+                        something["one"].append({
+                            'Search': str(title),
+                            'App': str(hmm),
+                        })
+                    i += 1
+                except:
+                    break
+        with open('./something/video.json', 'w') as outfile:
+            json.dump(something, outfile)
+
+    def shopping(self):
+        '''
+        Function to preprocess history data
+
+        @params:
+            None
+
+        @returns:
+            .json
+            with all the required info for the futher things
+        '''
+        # SEARHC in GOOGLE APPS:
+        something = {'one': []}
+        with open(os.path.join(self.path_extract, r'Takeout\My Activity\Shopping\My Activity.html'), 'rb') as file:
+            html_file = html.parse(file)
+            i = 0
+            while i < 100:
+                try:
+                    for content, content1 in zip(html_file.xpath(self._xpath_search_gap_title.format(i)), html_file.xpath(self._xpath_search_gap_product.format(i))):
+                        title = content.text_content().encode('ascii', 'ignore')[12:]
+                        hmm = content1.text_content().encode('ascii', 'ignore')
+                        print(f"Title: {title}")
+                        print(f"{hmm}")
+                        something["one"].append({
+                            'Search': str(title),
+                            'App': str(hmm),
+                        })
+                    i += 1
+                except:
+                    break
+        with open('./something/shopping.json', 'w') as outfile:
+            json.dump(something, outfile)
+
+    def news(self):
+        '''
+        Function to preprocess history data
+
+        @params:
+            None
+
+        @returns:
+            .json
+            with all the required info for the futher things
+        '''
+        # SEARHC in GOOGLE APPS:
+        something = {'one': []}
+        with open(os.path.join(self.path_extract, r'Takeout\My Activity\News\My Activity.html'), 'rb') as file:
+            html_file = html.parse(file)
+            i = 0
+            while i < 100:
+                try:
+                    for content, content1 in zip(html_file.xpath(self._xpath_search_gap_title.format(i)), html_file.xpath(self._xpath_search_gap_product.format(i))):
+                        title = content.text_content().encode('ascii', 'ignore')[12:]
+                        hmm = content1.text_content().encode('ascii', 'ignore')
+                        print(f"Title: {title}")
+                        print(f"{hmm}")
+                        something["one"].append({
+                            'news': str(html_file.xpath('/html/body/div/div[1]/div/div[1]/p')[0].text_content().encode('ascii', 'ignore')),
+                            'Search': str(title),
+                            'App': str(hmm),
+                        })
+                    i += 1
+                except:
+                    break
+        with open('./something/news.json', 'w') as outfile:
+            json.dump(something, outfile)
+
+    def cs(self):
+        '''
+        Function to preprocess history data
+
+        @params:
+            None
+
+        @returns:
+            .json
+            with all the required info for the futher things
+        '''
+        # SEARHC in GOOGLE APPS:
+        something = {'one': []}
+        with open(os.path.join(self.path_extract, r'Takeout\My Activity\Google Analytics\My Activity.html'), 'rb') as file:
+            html_file = html.parse(file)
+            i = 0
+            while i < 100:
+                try:
+                    for content, content1 in zip(html_file.xpath(self._xpath_search_gap_title.format(i)), html_file.xpath(self._xpath_search_gap_product.format(i))):
+                        title = content.text_content().encode('ascii', 'ignore')
+                        hmm = content1.text_content().encode('ascii', 'ignore')
+                        print(f"Title: {title}")
+                        print(f"{hmm}")
+                        something["one"].append({
+                            'Search': str(title),
+                            'App': str(hmm),
+                        })
+                    i += 1
+                except:
+                    break
+        with open('./something/cs.json', 'w') as outfile:
             json.dump(something, outfile)
