@@ -47,7 +47,7 @@ class Takeout:
         else:
             raise Exception("Path is not a string.")
 
-    #TODO: Doens't work properly.
+    # TODO: Doens't work properly.
     def extractor(self):
         '''
         Function to extract the extractor files.
@@ -57,7 +57,7 @@ class Takeout:
         '''
         self.zip_files = self.zip_files[:1]
         if self.strategy == '1':
-            for zip_file in self.zip_files:      
+            for zip_file in self.zip_files:
                 zip_file = zf.ZipFile(os.path.join(self.path_takeout, zip_file), 'r')
                 if not os.path.exists(self.path_extract):
                     os.makedirs(self.path_extract)
@@ -73,7 +73,7 @@ class Takeout:
 
         @params:
             None
-        '''  
+        '''
         raise NotImplementedError
 
     def preprocess(self, path=r'C:\Users\ratin\Downloads\takeout-20190506T143207Z-001\Takeout'):
@@ -82,4 +82,5 @@ class Takeout:
 
         @params:
             None
-        ''' 
+        '''
+        raise NotImplementedError
