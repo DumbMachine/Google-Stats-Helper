@@ -14,7 +14,7 @@
 - [ ] Google Searh History Editor
 - [ ] Google Youtube Comments
 - [ ] Youtube Subscriptions
-= [ ] Youtube Seach History
+- [ ] Youtube Seach History
 - [ ] Favourite Pages
 - [ ] Favourite Images
 - [ ] Reminders
@@ -30,4 +30,3 @@
 - [ ] Chrome Reading List
 --------------------------------
 - [ ] Add things as they come to my mind
- 

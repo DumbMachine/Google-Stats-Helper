@@ -113,11 +113,13 @@ class MapReviews:
         else:
             return 'red'
 
-    def something(self):
+    def build_coords(self, filename="../.data/takeout-20190506T143207Z-001/takeout/Location History/Location History.json"):
         '''
-        Function to find the takeout files.
+        Function to get your moving/locations statistics from google
 
         @params:
             None
         '''
-        pass
+        with open(filename) as something:
+            json_data = json.load(something)
+            print(pd.DataFrame(json_data).to_csv('./something.csv'))
