@@ -161,6 +161,38 @@ class Takeout:
         with open('./something/gmail.json', 'w') as outfile:
             json.dump(something, outfile)
 
+    def search_youtube(self):
+        '''
+        Function to preprocess youtube history data
+
+        @params:
+            None
+
+        @returns:
+            .json
+            with all the required info for the futher things
+        '''
+        something = {'one': []}
+        with open(os.path.join(self.path_extract, r'Takeout\YouTube\history\search-history.html'), 'rb') as file:
+            html_file = html.parse(file)
+            i = 0
+            while i < 100:
+                try:
+                    for content, content1 in zip(html_file.xpath(self._xpath_search_gap_title.format(i)), html_file.xpath(self._xpath_search_gap_product.format(i))):
+                        title = content.text_content().encode('ascii', 'ignore')[12:]
+                        hmm = content1.text_content().encode('ascii', 'ignore')
+                        print(f"Title: {title}")
+                        print(f"{hmm}")
+                        something["one"].append({
+                            'Search': str(title),
+                            'App': str(hmm),
+                        })
+                    i += 1
+                except:
+                    break
+        with open('./something/youtube.json', 'w') as outfile:
+            json.dump(something, outfile)
+
     def search_developer(self):
         '''
         Function to preprocess history data

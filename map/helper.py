@@ -1,3 +1,3 @@
 from map import MapReviews
 something = MapReviews()
-something.display()
+something.build_coords()
