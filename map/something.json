@@ -1,0 +1,179 @@
+{
+    "labelled_places": [
+        {
+            "marker_location": [
+                29.9451403,
+                76.8173138
+            ],
+            "address": "NIT, Thanesar, Haryana, India",
+            "marker_name": "Home"
+        }
+    ],
+    "reviewed_places": [
+        {
+            "marker_location": [
+                76.8738405,
+                29.9744341
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0xf6e641bcefa9890b",
+            "address": "Pipli Road, Opp P.N.B Regional Office Kurukshetra Haryana 136118 IN Pipli Road Kurukshetra Haryana 136118 IN, Pipli Rd, Kurukshetra, Haryana 136118, India",
+            "date": "2019-04-20T04:47:26.798Z",
+            "comment": "",
+            "rating": 4
+        },
+        {
+            "marker_location": [
+                76.8678202,
+                29.9745424
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0xc6f64381397a4a4e",
+            "address": "Unnamed Road, DD colony, Kurukshetra, Haryana 136118, India",
+            "date": "2019-04-20T04:47:18.195Z",
+            "comment": "",
+            "rating": 2
+        },
+        {
+            "marker_location": [
+                76.8166003,
+                29.9472971
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x21309b4f8fcb6e9",
+            "address": "NIT, Thanesar, Haryana 136119, India",
+            "date": "2019-03-15T04:30:19.121Z",
+            "comment": "",
+            "rating": 2
+        },
+        {
+            "marker_location": [
+                76.8275351,
+                29.9621683
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x51816a3b13432084",
+            "address": "Brahmsarovar Road, Brahma Sarovar Area, Thanesar, Haryana 136118, India",
+            "date": "2019-03-11T17:29:42.448Z",
+            "comment": "",
+            "rating": 4
+        },
+        {
+            "marker_location": [
+                76.8154806,
+                29.9472868
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x54da433ac19b9e4b",
+            "address": "Central Corridor Rd, NIT, Thanesar, Haryana 136119, India",
+            "date": "2019-02-27T16:24:50.795Z",
+            "comment": "",
+            "rating": 5
+        },
+        {
+            "marker_location": [
+                75.7399408,
+                29.1332656
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x5b4926f1d5558510",
+            "address": "Sector 13, Hisar, Haryana 125001, India",
+            "date": "2019-02-18T13:41:55.831Z",
+            "comment": "",
+            "rating": 3
+        },
+        {
+            "marker_location": [
+                76.8366074,
+                29.9704206
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0xfb464e64cefbed95",
+            "address": "Sector 17, Thanesar, Haryana 136118, India",
+            "date": "2018-12-18T15:40:53.070Z",
+            "comment": "",
+            "rating": 3
+        },
+        {
+            "marker_location": [
+                76.8125486,
+                29.9560198
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x45f0dd99d2c50464",
+            "address": "Kurukshetra University, Thanesar, Haryana 136119, India",
+            "date": "2018-12-11T06:16:30.854Z",
+            "comment": "",
+            "rating": 3
+        },
+        {
+            "marker_location": [
+                76.8178473,
+                29.9431249
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x2e898655becb5d70",
+            "address": "NIT, Thanesar, Haryana 136119, India",
+            "date": "2018-11-25T13:17:09.788Z",
+            "comment": "",
+            "rating": 4
+        },
+        {
+            "marker_location": [
+                76.8156391,
+                29.9501239
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x3fab8c392648197f",
+            "address": "NIT, Thanesar, Haryana 136119, India",
+            "date": "2018-11-25T13:16:46.131Z",
+            "comment": "",
+            "rating": 3
+        },
+        {
+            "marker_location": [
+                76.8181165,
+                29.9487771
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0xd304645c49aaaa6b",
+            "address": "NIT, Thanesar, Haryana 136119, India",
+            "date": "2018-11-25T13:16:30.763Z",
+            "comment": "",
+            "rating": 4
+        },
+        {
+            "marker_location": [
+                55.308539,
+                25.2523684
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x2c5d930be7fa5fce",
+            "address": "Khalid Bin Al Waleed Rd - Dubai - United Arab Emirates",
+            "date": "2018-11-10T05:32:31.752Z",
+            "comment": "",
+            "rating": 3
+        },
+        {
+            "marker_location": [
+                55.3810568,
+                25.2894135
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x135de997160ac7a1",
+            "address": "Al Nahda - Dubai - United Arab Emirates",
+            "date": "2018-11-10T05:32:15.392Z",
+            "comment": "",
+            "rating": 4
+        },
+        {
+            "marker_location": [
+                76.812681,
+                29.948179
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x2da41524cee1d0b8",
+            "address": "Thanesar,, NIT, Thanesar, Haryana 136119, India",
+            "date": "2018-10-20T16:33:25.519Z",
+            "comment": "",
+            "rating": 4
+        },
+        {
+            "marker_location": [
+                55.303809,
+                25.240643
+            ],
+            "maps_url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x0:0x2d08301fc1179e05",
+            "address": "Next-Modern Bakery - Dubai - United Arab Emirates",
+            "date": "2018-07-02T15:00:15.568Z",
+            "comment": "",
+            "rating": 4
+        }
+    ]
+}
