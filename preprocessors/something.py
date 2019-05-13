@@ -25,6 +25,7 @@ class Takeout:
                             1: Extract and propcess the data, one-by-one.
                             2: Extract all the files and process data afterwards.
         '''
+        
         self.path_takeout = path_takeout
         self.path_extract = './.data'
         self.zip_files = []

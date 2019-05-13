@@ -5,9 +5,12 @@
 
 🔎 Get your own Data Takeout [here](https://takeout.google.com/?hl=en-GB&utm_source=google-account&utm_medium=web)
 
+## Examples or Something:
+
+
 
 ## ⚫TODO List:
-- [ ] Google Map Data
+- [X] Google Map Data
 - [ ] Google Searh History Editor
 - [ ] Google Youtube Comments
 - [ ] Youtube Subscriptions
@@ -16,8 +19,8 @@
 - [ ] Favourite Images
 - [ ] Reminders
 - [ ] Profile Info
-- [ ] Google Map ratings
-- [ ] Google Map Labelled Places
+- [X] Google Map ratings
+- [X] Google Map Labelled Places
 - [ ] Google Fit Data (Daily Aggregations)
 - [ ] Google Fit Data (Activities)
 - [ ] Google Contacts
