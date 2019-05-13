@@ -2,6 +2,7 @@ import os
 import json
 import folium
 import pandas as pd
+import collections
 
 
 class MapReviews:
@@ -60,7 +61,7 @@ class MapReviews:
 
     def display(self):
         '''
-        Function to find the takeout files.
+        Function to display all the labelled places and reviewed places on a Leaflet Map using Folium
 
         @params:
             None
@@ -79,25 +80,38 @@ class MapReviews:
                 xs.append(reviews['marker_location'][0])
                 ys.append(reviews['marker_location'][1])
                 information.append("Location: {} ---> Review: {}".format(reviews['address'], reviews['rating']))
-                values.append(40)
-            print(xs, ys, information)
+                values.append(reviews['rating'])
 
-        data = pd.DataFrame({'lat': xs,
-                            'lon': ys,
-                            'name': information,
-                            'value': values
-                            })
+        data = pd.DataFrame({'lat': xs, 'lon': ys, 'name': information, 'value': values})
 
-        map = folium.Map(location=[20, 0], tiles="cartodbdark_matter", zoom_start=0)
+        map = folium.Map(location=[20, 0], zoom_start=0)
         folium.TileLayer('cartodbdark_matter').add_to(map)
-
         fg = folium.FeatureGroup(name="Something")
 
         for lat, lon, name, value in zip(data['lat'], data['lon'], data['name'], data['value']):
-            fg.add_child(folium.Marker(location=[lon, lat], popup=(folium.Popup(name)), icon=folium.Icon(color='red', icon_color='green')))
-
+            fg.add_child(folium.Marker(location=[lon, lat], popup=(folium.Popup(name)),
+                         icon=folium.Icon(color='red', icon=self.ratings_icon(value))))
         map.add_child(fg)
         map.save(outfile='map.html')
+
+    def ratings_icon(self, something):
+        '''
+        Function to help sort the .json according to the Ratings of the reviews.
+
+        @params:
+            something: int:
+                The ratings value
+
+        @returns:
+            string:
+                Icon name for the ratings (something) input.
+        '''
+        if something == 4 or something == 5:
+            return 'cloud'
+        elif something == 3 or something == 2:
+            return 'amilia'
+        else:
+            return 'red'
 
     def something(self):
         '''

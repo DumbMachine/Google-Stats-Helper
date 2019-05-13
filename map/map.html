@@ -17,7 +17,7 @@
     
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <style>#map_c3b1747358da4e77a9807b8ddbe8de6d {
+    <style>#map_2dc7eb6c5bc44c9daecfc5c994cb8be8 {
         position: relative;
         width: 100.0%;
         height: 100.0%;
@@ -28,7 +28,7 @@
 </head>
 <body>    
     
-    <div class="folium-map" id="map_c3b1747358da4e77a9807b8ddbe8de6d" ></div>
+    <div class="folium-map" id="map_2dc7eb6c5bc44c9daecfc5c994cb8be8" ></div>
 </body>
 <script>    
     
@@ -36,8 +36,8 @@
         var bounds = null;
     
 
-    var map_c3b1747358da4e77a9807b8ddbe8de6d = L.map(
-        'map_c3b1747358da4e77a9807b8ddbe8de6d', {
+    var map_2dc7eb6c5bc44c9daecfc5c994cb8be8 = L.map(
+        'map_2dc7eb6c5bc44c9daecfc5c994cb8be8', {
         center: [20, 0],
         zoom: 0,
         maxBounds: bounds,
@@ -49,7 +49,20 @@
 
 
     
-    var tile_layer_8098c2d63cc24628bde52d8434e3922c = L.tileLayer(
+    var tile_layer_30b738a56e654fc4a11b7fb04199aa34 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_2dc7eb6c5bc44c9daecfc5c994cb8be8);
+    var tile_layer_cbac66a6f07d4f7da36ea932324b4f1c = L.tileLayer(
         'https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',
         {
         "attribution": null,
@@ -61,530 +74,517 @@
         "opacity": 1,
         "subdomains": "abc",
         "tms": false
-}).addTo(map_c3b1747358da4e77a9807b8ddbe8de6d);
-    var tile_layer_3f4ec02ae9b244bfb07760a10b8fa63a = L.tileLayer(
-        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',
-        {
-        "attribution": null,
-        "detectRetina": false,
-        "maxNativeZoom": 18,
-        "maxZoom": 18,
-        "minZoom": 0,
-        "noWrap": false,
-        "opacity": 1,
-        "subdomains": "abc",
-        "tms": false
-}).addTo(map_c3b1747358da4e77a9807b8ddbe8de6d);
+}).addTo(map_2dc7eb6c5bc44c9daecfc5c994cb8be8);
     
-            var feature_group_80fff12c74eb49f2975d1ed82f7d0940 = L.featureGroup(
-                ).addTo(map_c3b1747358da4e77a9807b8ddbe8de6d);
+            var feature_group_da036f68d5be40c5afdc13429a42b999 = L.featureGroup(
+                ).addTo(map_2dc7eb6c5bc44c9daecfc5c994cb8be8);
         
     
-        var marker_60e7bac893ce4c8fbdbc1503312bd22e = L.marker(
+        var marker_df2b80d4c99b48ad9b4174a63e5144a5 = L.marker(
             [29.9744341, 76.8738405],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_e70f53ffed944abb84f4e92aa28765f9 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_21d4acff7c624b9ba368ff20cb2a658b = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_60e7bac893ce4c8fbdbc1503312bd22e.setIcon(icon_e70f53ffed944abb84f4e92aa28765f9);
+                marker_df2b80d4c99b48ad9b4174a63e5144a5.setIcon(icon_21d4acff7c624b9ba368ff20cb2a658b);
             
     
-            var popup_9bfed52bb9a143d78d8a000b34dc7379 = L.popup({maxWidth: '100%'
+            var popup_2a3e1808dd064761a825f76492ce71d8 = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_77e271b09d2240e2ba3d8199c15938ea = $(`<div id="html_77e271b09d2240e2ba3d8199c15938ea" style="width: 100.0%; height: 100.0%;">Location: Pipli Road, Opp P.N.B Regional Office Kurukshetra Haryana 136118 IN Pipli Road Kurukshetra Haryana 136118 IN, Pipli Rd, Kurukshetra, Haryana 136118, India ---> Review: 4</div>`)[0];
-                popup_9bfed52bb9a143d78d8a000b34dc7379.setContent(html_77e271b09d2240e2ba3d8199c15938ea);
+                var html_18b9559ae5b14b67b9e4b234fc12c36e = $(`<div id="html_18b9559ae5b14b67b9e4b234fc12c36e" style="width: 100.0%; height: 100.0%;">Location: Pipli Road, Opp P.N.B Regional Office Kurukshetra Haryana 136118 IN Pipli Road Kurukshetra Haryana 136118 IN, Pipli Rd, Kurukshetra, Haryana 136118, India ---> Review: 4</div>`)[0];
+                popup_2a3e1808dd064761a825f76492ce71d8.setContent(html_18b9559ae5b14b67b9e4b234fc12c36e);
             
 
-            marker_60e7bac893ce4c8fbdbc1503312bd22e.bindPopup(popup_9bfed52bb9a143d78d8a000b34dc7379)
+            marker_df2b80d4c99b48ad9b4174a63e5144a5.bindPopup(popup_2a3e1808dd064761a825f76492ce71d8)
             ;
 
             
         
     
-        var marker_4f5e88b2fedd43a78a2d516e436dfd4a = L.marker(
+        var marker_9b38b9d7dcb64130ac300bbbd159ed69 = L.marker(
             [29.9745424, 76.8678202],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_f3b3544e474349e29d486bd4d8a62d43 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_ac71a3cfebe44563a7d35d893d3bac49 = L.AwesomeMarkers.icon({
+                    icon: 'amilia',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_4f5e88b2fedd43a78a2d516e436dfd4a.setIcon(icon_f3b3544e474349e29d486bd4d8a62d43);
+                marker_9b38b9d7dcb64130ac300bbbd159ed69.setIcon(icon_ac71a3cfebe44563a7d35d893d3bac49);
             
     
-            var popup_a7ad9879e7a94caca19f43c0e477a98b = L.popup({maxWidth: '100%'
+            var popup_e4312516d4e54effbc4b3925f4882d7a = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_b55c3349dc834a9e907d80002e008d46 = $(`<div id="html_b55c3349dc834a9e907d80002e008d46" style="width: 100.0%; height: 100.0%;">Location: Unnamed Road, DD colony, Kurukshetra, Haryana 136118, India ---> Review: 2</div>`)[0];
-                popup_a7ad9879e7a94caca19f43c0e477a98b.setContent(html_b55c3349dc834a9e907d80002e008d46);
+                var html_7dd14f4b16af490585d47d58dd5a0c96 = $(`<div id="html_7dd14f4b16af490585d47d58dd5a0c96" style="width: 100.0%; height: 100.0%;">Location: Unnamed Road, DD colony, Kurukshetra, Haryana 136118, India ---> Review: 2</div>`)[0];
+                popup_e4312516d4e54effbc4b3925f4882d7a.setContent(html_7dd14f4b16af490585d47d58dd5a0c96);
             
 
-            marker_4f5e88b2fedd43a78a2d516e436dfd4a.bindPopup(popup_a7ad9879e7a94caca19f43c0e477a98b)
+            marker_9b38b9d7dcb64130ac300bbbd159ed69.bindPopup(popup_e4312516d4e54effbc4b3925f4882d7a)
             ;
 
             
         
     
-        var marker_8446bbc7d25d406db05ea3abf7f423ee = L.marker(
+        var marker_2cefee03f3164fc1b6c1695ebd374e46 = L.marker(
             [29.9472971, 76.8166003],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_0db431a5c32f42548323dbe402de6614 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_0bf38c939378489fa3f73caa6b03b569 = L.AwesomeMarkers.icon({
+                    icon: 'amilia',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_8446bbc7d25d406db05ea3abf7f423ee.setIcon(icon_0db431a5c32f42548323dbe402de6614);
+                marker_2cefee03f3164fc1b6c1695ebd374e46.setIcon(icon_0bf38c939378489fa3f73caa6b03b569);
             
     
-            var popup_ab37820a48484b04ad87d5a06dacd284 = L.popup({maxWidth: '100%'
+            var popup_576aeed375aa421a8f58323f0f487613 = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_dda19162a6ab4909aecfd25da8ca2a06 = $(`<div id="html_dda19162a6ab4909aecfd25da8ca2a06" style="width: 100.0%; height: 100.0%;">Location: NIT, Thanesar, Haryana 136119, India ---> Review: 2</div>`)[0];
-                popup_ab37820a48484b04ad87d5a06dacd284.setContent(html_dda19162a6ab4909aecfd25da8ca2a06);
+                var html_7f8ed6e46d1c46699993629192f95e9a = $(`<div id="html_7f8ed6e46d1c46699993629192f95e9a" style="width: 100.0%; height: 100.0%;">Location: NIT, Thanesar, Haryana 136119, India ---> Review: 2</div>`)[0];
+                popup_576aeed375aa421a8f58323f0f487613.setContent(html_7f8ed6e46d1c46699993629192f95e9a);
             
 
-            marker_8446bbc7d25d406db05ea3abf7f423ee.bindPopup(popup_ab37820a48484b04ad87d5a06dacd284)
+            marker_2cefee03f3164fc1b6c1695ebd374e46.bindPopup(popup_576aeed375aa421a8f58323f0f487613)
             ;
 
             
         
     
-        var marker_33695d8ca11043509fd1a2bd7b6243d2 = L.marker(
+        var marker_63320605a9574480b8a23a14a1f0bac4 = L.marker(
             [29.9621683, 76.8275351],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_74e569bde79e4225af4684a06c088bf8 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_5db56fcc73694f3eaf963f58cabe44ea = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_33695d8ca11043509fd1a2bd7b6243d2.setIcon(icon_74e569bde79e4225af4684a06c088bf8);
+                marker_63320605a9574480b8a23a14a1f0bac4.setIcon(icon_5db56fcc73694f3eaf963f58cabe44ea);
             
     
-            var popup_161ded40877d4a84b2db145aef9fe5f4 = L.popup({maxWidth: '100%'
+            var popup_417d42ca1cf541f7ad90fc4d51ff166b = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_6ff3eb772df44a18a55b933f97bece78 = $(`<div id="html_6ff3eb772df44a18a55b933f97bece78" style="width: 100.0%; height: 100.0%;">Location: Brahmsarovar Road, Brahma Sarovar Area, Thanesar, Haryana 136118, India ---> Review: 4</div>`)[0];
-                popup_161ded40877d4a84b2db145aef9fe5f4.setContent(html_6ff3eb772df44a18a55b933f97bece78);
+                var html_ebdfb11f2bab4bc4b6a39db7dce9f41b = $(`<div id="html_ebdfb11f2bab4bc4b6a39db7dce9f41b" style="width: 100.0%; height: 100.0%;">Location: Brahmsarovar Road, Brahma Sarovar Area, Thanesar, Haryana 136118, India ---> Review: 4</div>`)[0];
+                popup_417d42ca1cf541f7ad90fc4d51ff166b.setContent(html_ebdfb11f2bab4bc4b6a39db7dce9f41b);
             
 
-            marker_33695d8ca11043509fd1a2bd7b6243d2.bindPopup(popup_161ded40877d4a84b2db145aef9fe5f4)
+            marker_63320605a9574480b8a23a14a1f0bac4.bindPopup(popup_417d42ca1cf541f7ad90fc4d51ff166b)
             ;
 
             
         
     
-        var marker_0e777ad99f2245fd856d7ab6a4596df7 = L.marker(
+        var marker_b3f23ab6b9ce4a5bb4bbc62842ac3652 = L.marker(
             [29.9472868, 76.8154806],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_8b9c0ebf8b3b4cf98887efa6e94dbe44 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_6714bc06687646a782971fd16db89294 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_0e777ad99f2245fd856d7ab6a4596df7.setIcon(icon_8b9c0ebf8b3b4cf98887efa6e94dbe44);
+                marker_b3f23ab6b9ce4a5bb4bbc62842ac3652.setIcon(icon_6714bc06687646a782971fd16db89294);
             
     
-            var popup_28cabeed8c0845ddbd92e0956c48abc5 = L.popup({maxWidth: '100%'
+            var popup_8ec849940beb49f286de60f5b198c5b6 = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_b5f568e67605415b8225bf3bdf1db2ba = $(`<div id="html_b5f568e67605415b8225bf3bdf1db2ba" style="width: 100.0%; height: 100.0%;">Location: Central Corridor Rd, NIT, Thanesar, Haryana 136119, India ---> Review: 5</div>`)[0];
-                popup_28cabeed8c0845ddbd92e0956c48abc5.setContent(html_b5f568e67605415b8225bf3bdf1db2ba);
+                var html_276cc0262cd7473c978d9cc5513c60fb = $(`<div id="html_276cc0262cd7473c978d9cc5513c60fb" style="width: 100.0%; height: 100.0%;">Location: Central Corridor Rd, NIT, Thanesar, Haryana 136119, India ---> Review: 5</div>`)[0];
+                popup_8ec849940beb49f286de60f5b198c5b6.setContent(html_276cc0262cd7473c978d9cc5513c60fb);
             
 
-            marker_0e777ad99f2245fd856d7ab6a4596df7.bindPopup(popup_28cabeed8c0845ddbd92e0956c48abc5)
+            marker_b3f23ab6b9ce4a5bb4bbc62842ac3652.bindPopup(popup_8ec849940beb49f286de60f5b198c5b6)
             ;
 
             
         
     
-        var marker_f63f379f294b49ed8f1bd03311a50d99 = L.marker(
+        var marker_b52d4f4e3305471cbd265a6a9cc7a839 = L.marker(
             [29.1332656, 75.7399408],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_f076d27054354a0fb7b2e0db3e2a1c64 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_84e4243f82d54651bc2d01a498b4ea33 = L.AwesomeMarkers.icon({
+                    icon: 'amilia',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_f63f379f294b49ed8f1bd03311a50d99.setIcon(icon_f076d27054354a0fb7b2e0db3e2a1c64);
+                marker_b52d4f4e3305471cbd265a6a9cc7a839.setIcon(icon_84e4243f82d54651bc2d01a498b4ea33);
             
     
-            var popup_16585fe1175248f2bcd5f7da36cd4062 = L.popup({maxWidth: '100%'
+            var popup_25112a994cd745d996b6e986fcc86ccf = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_27309cb6873540f1a7de8c5557e9a31c = $(`<div id="html_27309cb6873540f1a7de8c5557e9a31c" style="width: 100.0%; height: 100.0%;">Location: Sector 13, Hisar, Haryana 125001, India ---> Review: 3</div>`)[0];
-                popup_16585fe1175248f2bcd5f7da36cd4062.setContent(html_27309cb6873540f1a7de8c5557e9a31c);
+                var html_51093a8a53da4cb1b8c3014cf75da0f5 = $(`<div id="html_51093a8a53da4cb1b8c3014cf75da0f5" style="width: 100.0%; height: 100.0%;">Location: Sector 13, Hisar, Haryana 125001, India ---> Review: 3</div>`)[0];
+                popup_25112a994cd745d996b6e986fcc86ccf.setContent(html_51093a8a53da4cb1b8c3014cf75da0f5);
             
 
-            marker_f63f379f294b49ed8f1bd03311a50d99.bindPopup(popup_16585fe1175248f2bcd5f7da36cd4062)
+            marker_b52d4f4e3305471cbd265a6a9cc7a839.bindPopup(popup_25112a994cd745d996b6e986fcc86ccf)
             ;
 
             
         
     
-        var marker_ff229c7cdd8d4906acb4acf989504862 = L.marker(
+        var marker_a32f5027e6494b56b09a17ae8983dd6f = L.marker(
             [29.9704206, 76.8366074],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_5b281806f991476786368826e3f3a3ed = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_21758e7d3c1c437389627190ca59b198 = L.AwesomeMarkers.icon({
+                    icon: 'amilia',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_ff229c7cdd8d4906acb4acf989504862.setIcon(icon_5b281806f991476786368826e3f3a3ed);
+                marker_a32f5027e6494b56b09a17ae8983dd6f.setIcon(icon_21758e7d3c1c437389627190ca59b198);
             
     
-            var popup_6962b361cfdc480493464a52dd030848 = L.popup({maxWidth: '100%'
+            var popup_01dcdbe84d7344ebad6176764bca8317 = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_2776fc2bd63c48bda75ed5c6a112eef9 = $(`<div id="html_2776fc2bd63c48bda75ed5c6a112eef9" style="width: 100.0%; height: 100.0%;">Location: Sector 17, Thanesar, Haryana 136118, India ---> Review: 3</div>`)[0];
-                popup_6962b361cfdc480493464a52dd030848.setContent(html_2776fc2bd63c48bda75ed5c6a112eef9);
+                var html_31060d0a29364130bec64cc0b66d3b50 = $(`<div id="html_31060d0a29364130bec64cc0b66d3b50" style="width: 100.0%; height: 100.0%;">Location: Sector 17, Thanesar, Haryana 136118, India ---> Review: 3</div>`)[0];
+                popup_01dcdbe84d7344ebad6176764bca8317.setContent(html_31060d0a29364130bec64cc0b66d3b50);
             
 
-            marker_ff229c7cdd8d4906acb4acf989504862.bindPopup(popup_6962b361cfdc480493464a52dd030848)
+            marker_a32f5027e6494b56b09a17ae8983dd6f.bindPopup(popup_01dcdbe84d7344ebad6176764bca8317)
             ;
 
             
         
     
-        var marker_4b791943169c43e0b8664c8f636e5ae9 = L.marker(
+        var marker_763a49e5aa9d408781f2bd7ba6037420 = L.marker(
             [29.9560198, 76.8125486],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_472e1db5d2624a94be0f8107b2fe41d6 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_7fcb94205b5e4b5abd9f0c465fda91df = L.AwesomeMarkers.icon({
+                    icon: 'amilia',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_4b791943169c43e0b8664c8f636e5ae9.setIcon(icon_472e1db5d2624a94be0f8107b2fe41d6);
+                marker_763a49e5aa9d408781f2bd7ba6037420.setIcon(icon_7fcb94205b5e4b5abd9f0c465fda91df);
             
     
-            var popup_27e569a9e23348b485295c5e1dddefc4 = L.popup({maxWidth: '100%'
+            var popup_ac9603de1c6f4ab5a556fc5cfe95466c = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_7f8ce14fa22d46218c531b958b122d4c = $(`<div id="html_7f8ce14fa22d46218c531b958b122d4c" style="width: 100.0%; height: 100.0%;">Location: Kurukshetra University, Thanesar, Haryana 136119, India ---> Review: 3</div>`)[0];
-                popup_27e569a9e23348b485295c5e1dddefc4.setContent(html_7f8ce14fa22d46218c531b958b122d4c);
+                var html_e596bd4b668a4290b4f7d955c556535d = $(`<div id="html_e596bd4b668a4290b4f7d955c556535d" style="width: 100.0%; height: 100.0%;">Location: Kurukshetra University, Thanesar, Haryana 136119, India ---> Review: 3</div>`)[0];
+                popup_ac9603de1c6f4ab5a556fc5cfe95466c.setContent(html_e596bd4b668a4290b4f7d955c556535d);
             
 
-            marker_4b791943169c43e0b8664c8f636e5ae9.bindPopup(popup_27e569a9e23348b485295c5e1dddefc4)
+            marker_763a49e5aa9d408781f2bd7ba6037420.bindPopup(popup_ac9603de1c6f4ab5a556fc5cfe95466c)
             ;
 
             
         
     
-        var marker_57049c5e3857425595e072d535f04782 = L.marker(
+        var marker_8355da9306754f91b2c3adcf044da23a = L.marker(
             [29.9431249, 76.8178473],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_5d7f02b0398940989eab831b16b32d61 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_113bcc567bfb4ff1a52114243667c781 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_57049c5e3857425595e072d535f04782.setIcon(icon_5d7f02b0398940989eab831b16b32d61);
+                marker_8355da9306754f91b2c3adcf044da23a.setIcon(icon_113bcc567bfb4ff1a52114243667c781);
             
     
-            var popup_edc9a8b526904a7d89a9d4cdfc1ea664 = L.popup({maxWidth: '100%'
+            var popup_54c7defb358144b09ee49ad2f80dddde = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_0cf1e8947b1244bdb121edaa1708f9d7 = $(`<div id="html_0cf1e8947b1244bdb121edaa1708f9d7" style="width: 100.0%; height: 100.0%;">Location: NIT, Thanesar, Haryana 136119, India ---> Review: 4</div>`)[0];
-                popup_edc9a8b526904a7d89a9d4cdfc1ea664.setContent(html_0cf1e8947b1244bdb121edaa1708f9d7);
+                var html_4e3109c7912b448a9e9e0a019855d3b9 = $(`<div id="html_4e3109c7912b448a9e9e0a019855d3b9" style="width: 100.0%; height: 100.0%;">Location: NIT, Thanesar, Haryana 136119, India ---> Review: 4</div>`)[0];
+                popup_54c7defb358144b09ee49ad2f80dddde.setContent(html_4e3109c7912b448a9e9e0a019855d3b9);
             
 
-            marker_57049c5e3857425595e072d535f04782.bindPopup(popup_edc9a8b526904a7d89a9d4cdfc1ea664)
+            marker_8355da9306754f91b2c3adcf044da23a.bindPopup(popup_54c7defb358144b09ee49ad2f80dddde)
             ;
 
             
         
     
-        var marker_8b628a2071074508a5952dc2c52ad0bc = L.marker(
+        var marker_5486710613974823adf4dab784b74587 = L.marker(
             [29.9501239, 76.8156391],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_2c5f8b08a88c4c32b0e6cf6043d23cf3 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_88996a415742462fa631115a2457f45e = L.AwesomeMarkers.icon({
+                    icon: 'amilia',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_8b628a2071074508a5952dc2c52ad0bc.setIcon(icon_2c5f8b08a88c4c32b0e6cf6043d23cf3);
+                marker_5486710613974823adf4dab784b74587.setIcon(icon_88996a415742462fa631115a2457f45e);
             
     
-            var popup_d697fc3448594aff9b38896292942045 = L.popup({maxWidth: '100%'
+            var popup_f8e8e51bd3f54028a60be0253c20dff8 = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_ddd33f6b94aa40a5bb7d782c8dd3f2ef = $(`<div id="html_ddd33f6b94aa40a5bb7d782c8dd3f2ef" style="width: 100.0%; height: 100.0%;">Location: NIT, Thanesar, Haryana 136119, India ---> Review: 3</div>`)[0];
-                popup_d697fc3448594aff9b38896292942045.setContent(html_ddd33f6b94aa40a5bb7d782c8dd3f2ef);
+                var html_35cf6b12dc2144319a7271abe0f074d2 = $(`<div id="html_35cf6b12dc2144319a7271abe0f074d2" style="width: 100.0%; height: 100.0%;">Location: NIT, Thanesar, Haryana 136119, India ---> Review: 3</div>`)[0];
+                popup_f8e8e51bd3f54028a60be0253c20dff8.setContent(html_35cf6b12dc2144319a7271abe0f074d2);
             
 
-            marker_8b628a2071074508a5952dc2c52ad0bc.bindPopup(popup_d697fc3448594aff9b38896292942045)
+            marker_5486710613974823adf4dab784b74587.bindPopup(popup_f8e8e51bd3f54028a60be0253c20dff8)
             ;
 
             
         
     
-        var marker_d45b4a6a9c294ea4a76e97b87b8a3097 = L.marker(
+        var marker_d486fb3b2bda42b1b5af81d8826d513b = L.marker(
             [29.9487771, 76.8181165],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_3b51aa6367f2485b94746c5c2fd339cb = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_f206f444f9d9482c9f44afa810ee64cd = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_d45b4a6a9c294ea4a76e97b87b8a3097.setIcon(icon_3b51aa6367f2485b94746c5c2fd339cb);
+                marker_d486fb3b2bda42b1b5af81d8826d513b.setIcon(icon_f206f444f9d9482c9f44afa810ee64cd);
             
     
-            var popup_77c58a8450db4daabbae412653c68f33 = L.popup({maxWidth: '100%'
+            var popup_f12bf516fd4a497183ff5144dce09674 = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_5fc8b31139914c5a9892556d75b65d46 = $(`<div id="html_5fc8b31139914c5a9892556d75b65d46" style="width: 100.0%; height: 100.0%;">Location: NIT, Thanesar, Haryana 136119, India ---> Review: 4</div>`)[0];
-                popup_77c58a8450db4daabbae412653c68f33.setContent(html_5fc8b31139914c5a9892556d75b65d46);
+                var html_b4873bddc1e5434cb62b8d58b40790e3 = $(`<div id="html_b4873bddc1e5434cb62b8d58b40790e3" style="width: 100.0%; height: 100.0%;">Location: NIT, Thanesar, Haryana 136119, India ---> Review: 4</div>`)[0];
+                popup_f12bf516fd4a497183ff5144dce09674.setContent(html_b4873bddc1e5434cb62b8d58b40790e3);
             
 
-            marker_d45b4a6a9c294ea4a76e97b87b8a3097.bindPopup(popup_77c58a8450db4daabbae412653c68f33)
+            marker_d486fb3b2bda42b1b5af81d8826d513b.bindPopup(popup_f12bf516fd4a497183ff5144dce09674)
             ;
 
             
         
     
-        var marker_f02fe8845f5e427eb5e712b718408e30 = L.marker(
+        var marker_720bf7bab74b46e0af999b2c269e7786 = L.marker(
             [25.2523684, 55.308539],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_0e0887ffbb534b788e21cb96f398b682 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_12d4df3286bc4c4fb879376526a248da = L.AwesomeMarkers.icon({
+                    icon: 'amilia',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_f02fe8845f5e427eb5e712b718408e30.setIcon(icon_0e0887ffbb534b788e21cb96f398b682);
+                marker_720bf7bab74b46e0af999b2c269e7786.setIcon(icon_12d4df3286bc4c4fb879376526a248da);
             
     
-            var popup_ecf8d1b52414420db5afaec161276ca9 = L.popup({maxWidth: '100%'
+            var popup_3587a19b75ee4c019c3d5dc1c31d1a6a = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_9666fbf38d574d6f8cd3be2c2657e961 = $(`<div id="html_9666fbf38d574d6f8cd3be2c2657e961" style="width: 100.0%; height: 100.0%;">Location: Khalid Bin Al Waleed Rd - Dubai - United Arab Emirates ---> Review: 3</div>`)[0];
-                popup_ecf8d1b52414420db5afaec161276ca9.setContent(html_9666fbf38d574d6f8cd3be2c2657e961);
+                var html_f140a861c0f44b3db6eccec5954f26ac = $(`<div id="html_f140a861c0f44b3db6eccec5954f26ac" style="width: 100.0%; height: 100.0%;">Location: Khalid Bin Al Waleed Rd - Dubai - United Arab Emirates ---> Review: 3</div>`)[0];
+                popup_3587a19b75ee4c019c3d5dc1c31d1a6a.setContent(html_f140a861c0f44b3db6eccec5954f26ac);
             
 
-            marker_f02fe8845f5e427eb5e712b718408e30.bindPopup(popup_ecf8d1b52414420db5afaec161276ca9)
+            marker_720bf7bab74b46e0af999b2c269e7786.bindPopup(popup_3587a19b75ee4c019c3d5dc1c31d1a6a)
             ;
 
             
         
     
-        var marker_0d04e639d37644e0aae3837d11a1bd72 = L.marker(
+        var marker_bcf35caf3ad0417cb8df617167c18cc7 = L.marker(
             [25.2894135, 55.3810568],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_617049965c644ef4b07fcbab627afe15 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_a70d1d635fd347ac8f61550e46eb4a49 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_0d04e639d37644e0aae3837d11a1bd72.setIcon(icon_617049965c644ef4b07fcbab627afe15);
+                marker_bcf35caf3ad0417cb8df617167c18cc7.setIcon(icon_a70d1d635fd347ac8f61550e46eb4a49);
             
     
-            var popup_0edc1b9263e14bb98c5e26bc49730e55 = L.popup({maxWidth: '100%'
+            var popup_649915fc39224447ac704c32f30107ee = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_1bdd345d6fd24b90801e887328be70b3 = $(`<div id="html_1bdd345d6fd24b90801e887328be70b3" style="width: 100.0%; height: 100.0%;">Location: Al Nahda - Dubai - United Arab Emirates ---> Review: 4</div>`)[0];
-                popup_0edc1b9263e14bb98c5e26bc49730e55.setContent(html_1bdd345d6fd24b90801e887328be70b3);
+                var html_65ae3cd2a7854237952e4ba94727e1a8 = $(`<div id="html_65ae3cd2a7854237952e4ba94727e1a8" style="width: 100.0%; height: 100.0%;">Location: Al Nahda - Dubai - United Arab Emirates ---> Review: 4</div>`)[0];
+                popup_649915fc39224447ac704c32f30107ee.setContent(html_65ae3cd2a7854237952e4ba94727e1a8);
             
 
-            marker_0d04e639d37644e0aae3837d11a1bd72.bindPopup(popup_0edc1b9263e14bb98c5e26bc49730e55)
+            marker_bcf35caf3ad0417cb8df617167c18cc7.bindPopup(popup_649915fc39224447ac704c32f30107ee)
             ;
 
             
         
     
-        var marker_e102f33f309242e2b17f750dcaec7eba = L.marker(
+        var marker_5339ceef5f2444c48767170ff4568148 = L.marker(
             [29.948179, 76.812681],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_524bc7298c48458aa20e483c6d2c1b14 = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_c1567bd0e1c04abe9506666dd4e4fcdf = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_e102f33f309242e2b17f750dcaec7eba.setIcon(icon_524bc7298c48458aa20e483c6d2c1b14);
+                marker_5339ceef5f2444c48767170ff4568148.setIcon(icon_c1567bd0e1c04abe9506666dd4e4fcdf);
             
     
-            var popup_e5ca82b7f39a48f9b4f24856e5304ce9 = L.popup({maxWidth: '100%'
+            var popup_fd1b33fbc92b4c55bb93ecc3ad5728d5 = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_686fc6767618488b84ab36206b14f5d9 = $(`<div id="html_686fc6767618488b84ab36206b14f5d9" style="width: 100.0%; height: 100.0%;">Location: Thanesar,, NIT, Thanesar, Haryana 136119, India ---> Review: 4</div>`)[0];
-                popup_e5ca82b7f39a48f9b4f24856e5304ce9.setContent(html_686fc6767618488b84ab36206b14f5d9);
+                var html_d081267e34c2460c8fcc94e2d8b467d8 = $(`<div id="html_d081267e34c2460c8fcc94e2d8b467d8" style="width: 100.0%; height: 100.0%;">Location: Thanesar,, NIT, Thanesar, Haryana 136119, India ---> Review: 4</div>`)[0];
+                popup_fd1b33fbc92b4c55bb93ecc3ad5728d5.setContent(html_d081267e34c2460c8fcc94e2d8b467d8);
             
 
-            marker_e102f33f309242e2b17f750dcaec7eba.bindPopup(popup_e5ca82b7f39a48f9b4f24856e5304ce9)
+            marker_5339ceef5f2444c48767170ff4568148.bindPopup(popup_fd1b33fbc92b4c55bb93ecc3ad5728d5)
             ;
 
             
         
     
-        var marker_f095e38ff2924da2b4fa3916609c3383 = L.marker(
+        var marker_17ca07c17d1a4a25a477d35e808cd59d = L.marker(
             [25.240643, 55.303809],
             {
                 icon: new L.Icon.Default(),
                 }
-            ).addTo(feature_group_80fff12c74eb49f2975d1ed82f7d0940);
+            ).addTo(feature_group_da036f68d5be40c5afdc13429a42b999);
         
     
 
-                var icon_b30b9070397c4e9b93384b8098573c7c = L.AwesomeMarkers.icon({
-                    icon: 'info-sign',
-                    iconColor: 'green',
+                var icon_010443b9a8ae495f91369939305124fd = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_f095e38ff2924da2b4fa3916609c3383.setIcon(icon_b30b9070397c4e9b93384b8098573c7c);
+                marker_17ca07c17d1a4a25a477d35e808cd59d.setIcon(icon_010443b9a8ae495f91369939305124fd);
             
     
-            var popup_c2623eba098c4e8a9438ba98a6f9bcba = L.popup({maxWidth: '100%'
+            var popup_b4330187d8674998b88bc1a1ab1f1376 = L.popup({maxWidth: '100%'
             
             });
 
             
-                var html_8a277f339b0d476cba5bf133b5885d4e = $(`<div id="html_8a277f339b0d476cba5bf133b5885d4e" style="width: 100.0%; height: 100.0%;">Location: Next-Modern Bakery - Dubai - United Arab Emirates ---> Review: 4</div>`)[0];
-                popup_c2623eba098c4e8a9438ba98a6f9bcba.setContent(html_8a277f339b0d476cba5bf133b5885d4e);
+                var html_bf29908c816c4cba80c7745d9eab10db = $(`<div id="html_bf29908c816c4cba80c7745d9eab10db" style="width: 100.0%; height: 100.0%;">Location: Next-Modern Bakery - Dubai - United Arab Emirates ---> Review: 4</div>`)[0];
+                popup_b4330187d8674998b88bc1a1ab1f1376.setContent(html_bf29908c816c4cba80c7745d9eab10db);
             
 
-            marker_f095e38ff2924da2b4fa3916609c3383.bindPopup(popup_c2623eba098c4e8a9438ba98a6f9bcba)
+            marker_17ca07c17d1a4a25a477d35e808cd59d.bindPopup(popup_b4330187d8674998b88bc1a1ab1f1376)
             ;
 
             
